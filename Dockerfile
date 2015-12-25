@@ -19,8 +19,6 @@ RUN sudo npm install --global yo bower grunt-cli
 #Install Angular generate projets +1000 projects
 RUN sudo npm install --global generator-angular@0.11.1
 
-
-
 #Create user yeoman.
 RUN adduser --disabled-password --gecos "" yeoman; \
   echo "yeoman ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
